@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  font-family: poppinsFontLight;
+}
+
+@font-face {
+  font-family: poppinsFontBold;
+  src: url(chrome-extension://__MSG_@@extension_id__/assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: poppinsFontRegular;
+  src: url(chrome-extension://__MSG_@@extension_id__/assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: poppinsFontLight;
+  src: url(chrome-extension://__MSG_@@extension_id__/assets/fonts/Poppins-Light.ttf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: poppinsExtraLight;
+  src: url(chrome-extension://__MSG_@@extension_id__/assets/fonts/Poppins-ExtraLight.ttf);
+}
+
+.orange {
+  color: #ed7333;
+  font-family: poppinsFontBold;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.img-responsive {
+  width: 100%;
+  display: block;
+}
+.hidden {
+  display: none !important;
+}
+.btn {
+  cursor: pointer;
+  background: transparent;
+  border-radius: 3px;
+}
+.btn:focus,
+.btn:active {
+  outline: none;
+}
+.swiggy {
+  width: 356px;
+}
+.swiggy-header {
+  display: flex;
+  padding: 12px 24px 0px;
+}
+.headline .heading {
+  margin: 0px;
+  font-family: poppinsExtraLight;
+  font-size: 23px;
+}
+.powered-by {
+  font-size: 13px;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+.info-icon-container {
+  display: flex;
+  flex: 0 0 60px;
+  margin-right: 12px;
+}
+.info-icon {
+  width: 50px;
+  margin-bottom: 4px;
+}
+.swiggy-dashboard {
+  background: #ed7333;
+}
+.description {
+  font-size: 11px;
+  padding: 20px 24px 12px;
+  text-align: justify;
+  color: #fff;
+}
+.bottom-links {
+  display: flex;
+  justify-content: center;
+  padding: 16px 24px 20px;
+  border-top: 2px solid #fff;
+}
+.suggestion-btn {
+  color: #fff;
+  border: 0px;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+}
+.note-icon {
+  width: 22px;
+  margin-right: 8px;
+  fill: white;
+  margin-top: 4px;
+}
+.visit-swiggy {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+}
+.visit-swiggy-icon {
+  width: 16px;
+  margin-right: 8px;
+}
+.footer {
+  padding: 12px 8px;
+}
+.footer-logo-container {
+  width: 100px;
+  margin: auto;
+}

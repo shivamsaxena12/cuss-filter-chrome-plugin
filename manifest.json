@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "name": "What The Falooda",
+  "manifest_version": 2,
+  "description": "What The Falooda highlights profanity and hurtful words, and replaces it with our favourite foods.",
+  "permissions": ["*://*/*"],
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_icon": "assets/images/popup-icon.png",
+    "default_title": "What The Falooda"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["assets/js/library/pluralize.js"]
+    },
+    {
+      "matches": ["<all_urls>"],
+      "js": ["assets/js/custom/domScript.js"],
+      "css": ["assets/css/contentStyles.css"]
+    }
+  ],
+  "background": {
+    "scripts": ["assets/js/custom/background.js"],
+    "persistent": false
+  },
+  "web_accessible_resources": ["*/*.png", "*/*.woff"]
+}

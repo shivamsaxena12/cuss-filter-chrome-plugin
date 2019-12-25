@@ -1,0 +1,113 @@
+@font-face {
+  font-family: proximaFont;
+  font-weight: 600;
+  src: url(chrome-extension://__MSG_@@extension_id__/assets/fonts/ProximaNovaReg.woff);
+}
+
+.swiggy-card * {
+  font-family: proximaFont;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.swiggy-card {
+  position: fixed;
+  overflow-x: hidden;
+  z-index: 9999;
+  display: flex;
+  width: 212px;
+  min-height: 128px;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px 1px;
+  transition: opacity 0.3s ease 0s;
+  background: rgb(255, 255, 255);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.swiggy-card-right {
+  flex: 0 0 70px;
+  display: flex;
+  padding: 0px 6px;
+  align-items: center;
+  color: white;
+  background: rgb(237, 115, 51);
+}
+
+.swiggy-card-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.description {
+  line-height: 1.2;
+  font-size: 12px;
+  margin: 4px 0px;
+}
+
+.cuss-word {
+  width: 100%;
+  margin-top: 12px;
+  font-size: 16px;
+  padding: 12px 16px 8px;
+  color: rgb(36, 34, 34);
+}
+
+.replace-btn {
+  flex: 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 16px 8px;
+  cursor: pointer;
+  font-size: 16px;
+  background: transparent;
+  color: #989797;
+}
+
+.replace-btn:hover {
+  background: #34cc9b !important;
+}
+
+.replace-btn:hover .good-word,
+.replace-btn:hover .description {
+  color: white;
+}
+
+.good-word {
+  color: rgb(237, 115, 51);
+}
+
+.swiggy-hs-container {
+  line-height: initial;
+  white-space: normal;
+  float: initial;
+  clear: none;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  color: transparent;
+  text-align: left !important;
+  margin: 0px;
+  padding: 0px;
+  background: transparent !important;
+  border-width: 0px !important;
+  border-style: initial !important;
+  border-color: initial !important;
+  border-image: initial !important;
+  border-radius: 0px !important;
+}
+
+.hs-block {
+  position: absolute;
+  overflow: scroll;
+  pointer-events: none !important;
+}
+
+.swiggy-highlights {
+  position: absolute;
+  z-index: 0;
+  border-bottom: 2px solid #e77d2b;
+  pointer-events: none;
+}
